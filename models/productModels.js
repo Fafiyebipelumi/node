@@ -17,6 +17,7 @@ function findById(id) {
     });
 }
 
+// Create a product
 function create(product) {
     return new Promise((resolve, reject) => {
         const newProduct = { id: uuidv4(), ...product }
@@ -26,6 +27,7 @@ function create(product) {
     })
 }
 
+// Update a product
 function update(id, product) {
     return new Promise((resolve, reject) => {
         const index = products.findIndex(p => p.id === id)
@@ -35,6 +37,7 @@ function update(id, product) {
     });
 }
 
+// Delete a product
 function remove(id) {
     return new Promise((resolve, reject) => {
         products = products.filter((p) => p.id !== id)

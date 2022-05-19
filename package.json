@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-nodejs-restapi",
+  "version": "1.0.0",
+  "description": "This is a nodeJS Rest API with no framework of any such",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fafiyebipelumi"
+  },
+  "author": "Oluwapelumi",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}

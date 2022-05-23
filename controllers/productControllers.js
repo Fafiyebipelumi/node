@@ -42,9 +42,9 @@ async function createProducts(req, res) {
         const { title, description, price } = JSON.parse(body);
 
         const product = {
-            title: title,
-            description: description,
-            price: price
+            title,
+            description,
+            price
         }
 
         const newProduct = await Product.create(product)

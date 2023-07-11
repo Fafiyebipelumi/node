@@ -89,7 +89,7 @@ async function updateProduct(req, res, id) {
 
 async function deleteProduct(req, res, id) {
     try {
-        const product = await Product.findById(id);
+        const product = await Product.findById(id)
         if (!product) {
             res.writeHead(404, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ message: 'Product Not Found' }));
